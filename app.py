@@ -12,6 +12,7 @@ import numpy as np
 df = pd.read_csv('athlete_events.csv')
 region_df = pd.read_csv('noc_regions.csv')
 
+st.set_page_config(layout="wide")
 df = preprocessor.preprocess(df,region_df)
 st.sidebar.title('Olympics Analysis')
 st.sidebar.image("assets/vecteezy_sankt-petersburg-russia-01-02-2024-olympic-rings-olympic_36105751.png")
